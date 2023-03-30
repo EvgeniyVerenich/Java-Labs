@@ -1,0 +1,114 @@
+package com.company;
+
+public class Student {
+    private int id;
+    private String second_name;
+    private String first_name;
+    private String last_name;
+    private int birthday;
+    private String address;
+    private String phone;
+    private String faculty;
+    private int course;
+    private String group;
+
+    public Student(int id, String second_name, String first_name, String last_name, int birthday, String address, String phone, String faculty, int course, String group){
+
+        this.id = id;
+        this.second_name = second_name;
+        this.first_name = first_name;
+        this.last_name = last_name;
+        this.birthday = birthday;
+        this.address = address;
+        this.phone = phone;
+        this.faculty = faculty;
+        this.course = course;
+        this.group = group;
+
+    }
+
+    public void setId(int id){
+        this.id = id;
+    }
+
+    public int getId(){
+        return id;
+    }
+
+    public void setSecond_name(String second_name){
+        this.second_name = second_name;
+    }
+
+    public String getSecond_name(){
+        return second_name;
+    }
+
+    public void setFirst_name(String first_name){
+        this.first_name = first_name;
+    }
+
+    public String getFirst_name(){
+        return first_name;
+    }
+
+    public void setLast_name(String last_name){
+        this.last_name = last_name;
+    }
+
+    public String getLast_name(){
+        return last_name;
+    }
+
+    public void setBirthday(int birthday){
+        this.birthday = birthday;
+    }
+
+    public int getBirthday(){
+        return birthday;
+    }
+
+    public void setAddress(String address){
+        this.address = address;
+    }
+
+    public String getAddress(){
+        return address;
+    }
+
+    public void setPhone(String phone){
+        this.phone = phone;
+    }
+
+    public  String getPhone(){
+        return phone;
+    }
+
+    public void setFaculty(String faculty){
+        this.faculty = faculty;
+    }
+
+    public String getFaculty(){
+        return faculty;
+    }
+
+    public void setCourse(int course) {
+        this.course = course;
+    }
+
+    public int getCourse() {
+        return course;
+    }
+
+    public void setGroup(String group) {
+        this.group = group;
+    }
+
+    public String getGroup() {
+        return group;
+    }
+
+    public void showInfo(){
+        System.out.println("Информация о студенты : " +"Id : " + getId() +"\n" + "Ф.И.О. : " + getSecond_name() +" "+getFirst_name()+ " " +getLast_name()+"\n"+"Дата рождения :"+getBirthday()+"\n" + " Адрес : " + getAddress()+ "\n" +" Номер телефона : "+getPhone()+"\n"+"Факультет : "+getFaculty()+"\n"+"Курс : "+getCourse()+"\n"+"Группа : " + getGroup());
+    }
+    
+}

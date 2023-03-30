@@ -1,0 +1,23 @@
+package com.company;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Line {
+
+    private Word word;
+
+
+    public Line(Word word){
+        this.word = word;
+    }
+
+    public String getWord(){
+        return word.getSymbol();
+    }
+
+    public void showInfo(){
+        System.out.println(getWord());
+    }
+
+}

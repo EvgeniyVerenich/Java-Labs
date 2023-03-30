@@ -1,0 +1,66 @@
+package com.company;
+
+public class Tutor {
+
+    private String name;
+    private String sur_name;
+    private int age;
+
+    Course course;
+
+    public Tutor(String name, String sur_name, int age){
+        this.name = name;
+        this.sur_name = sur_name;
+        this.age = age;
+    }
+
+    public Tutor(String name, String sur_name, int age,Course course){
+        this.name = name;
+        this.sur_name = sur_name;
+        this.age = age;
+        this.course = course;
+    }
+
+
+    public void setCourse(Course course) {
+        this.course = course;
+    }
+
+    public Course getCourse() {
+        return course;
+    }
+
+    public String getCourseName(){
+        return course.getCourse_name();
+    }
+
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getSur_name() {
+        return sur_name;
+    }
+
+    public void setSur_name(String sur_name) {
+        this.sur_name = sur_name;
+    }
+
+    public void showInfo(){
+        System.out.println("Преподаватель : " + getName()+" " + getSur_name()+" " + getAge()+"\n"+"Ведет курс : "+course.getCourse_name());
+    }
+
+}

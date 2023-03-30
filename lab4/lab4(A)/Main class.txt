@@ -1,0 +1,22 @@
+package com.company;
+
+import java.util.ArrayList;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Symbol[] symbols = new Symbol[6];
+        symbols[0] = new Symbol("h");
+        symbols[1] = new Symbol("e");
+        symbols[2] = new Symbol("l");
+        symbols[3] = new Symbol("l");
+        symbols[4] = new Symbol("o");
+
+
+        Word word = new Word(symbols);
+        Word word1 = new Word(symbols);
+
+
+    }
+}

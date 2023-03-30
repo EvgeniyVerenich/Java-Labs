@@ -1,0 +1,60 @@
+package com.company;
+
+public class Student extends Tutor {
+
+    private String group;
+    private int mark;
+    Course course;
+
+    public Student(String name, String sur_name, int age,String group,Course course) {
+        super(name, sur_name, age);
+        this.group = group;
+        this.course = course;
+    }
+
+    @Override
+    public void setName(String name) {
+        super.setName(name);
+    }
+
+    @Override
+    public String getName() {
+        return super.getName();
+    }
+
+
+
+    @Override
+    public void setCourse(Course course) {
+        this.course = course;
+    }
+
+    @Override
+    public Course getCourse() {
+        return course;
+    }
+
+    public void setMark(int mark) {
+        this.mark = mark;
+    }
+
+    public String getCourseName(){
+        return course.getCourse_name();
+    }
+
+    public int getStudentMark(){
+        return mark;
+    }
+
+    public void setGroup(String group) {
+        this.group = group;
+    }
+
+    public String getGroup() {
+        return group;
+    }
+
+    public void showInfo(){
+        System.out.println("Студент : "+getName()+" "+getSur_name()+" " + getAge()+" " + getGroup());
+    }
+}

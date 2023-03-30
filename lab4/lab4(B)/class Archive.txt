@@ -1,0 +1,28 @@
+package com.company;
+
+public class Archive {
+
+    int mark;
+    private String archive_name;
+    private String archive_course_name;
+
+    public Archive(String archive_name,int mark){
+        this.archive_name = archive_name;
+        this.mark = mark;
+    }
+
+    public Archive(String archive_name,String archive_course_name) {
+        this.archive_name = archive_name;
+        this.archive_course_name = archive_course_name;
+    }
+
+    public void show_TutorArchive(){
+        System.out.println(archive_name +" " + archive_course_name);
+    }
+
+    public void show_Archive(){
+        System.out.println(archive_name +" оценка : " + mark);
+    }
+
+
+}
